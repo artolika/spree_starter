@@ -101,15 +101,23 @@ gem 'sentry-ruby'
 gem 'sentry-rails'
 gem 'sentry-sidekiq'
 
+# ActiveMerchant (Required for Razorpay/Stripe in 5.4)
+gem 'activemerchant'
+
+# Spree gems Optional
+gem "spree_multi_store", "~> 1.0"
+gem "spree_posts", "~> 1.0"
+gem 'jsonapi-rspec', group: :test
+
 # Spree gems
-spree_opts = '~> 5.3.4'
+spree_opts = '~> 5.4.1'
 gem "spree", spree_opts
 gem "spree_emails", spree_opts
-gem "spree_sample", spree_opts
 gem "spree_admin", spree_opts
 gem "spree_storefront", spree_opts
+gem "spree_page_builder", spree_opts
 gem "spree_i18n"
-#gem "spree_stripe"
+gem "spree_stripe"
 gem "spree_google_analytics", "~> 1.1"
 gem "spree_klaviyo", "~> 1.1"
 #gem "spree_paypal_checkout", "~> 0.5"
