@@ -110,7 +110,7 @@ gem "spree_posts", "~> 1.0"
 gem 'jsonapi-rspec', group: :test
 
 # Spree gems
-spree_opts = '~> 5.4.1'
+spree_opts = '~> 5.4.2'
 gem "spree", spree_opts
 gem "spree_emails", spree_opts
 gem "spree_admin", spree_opts
@@ -118,9 +118,9 @@ gem "spree_storefront", spree_opts
 gem "spree_page_builder", spree_opts
 gem "spree_i18n"
 gem "spree_stripe"
-gem "spree_google_analytics", "~> 1.1"
-gem "spree_klaviyo", "~> 1.1"
-#gem "spree_paypal_checkout", "~> 0.5"
+gem "spree_google_analytics"
+gem "spree_klaviyo"
+#gem "spree_paypal_checkout"
 
 gem 'spree_product_reviews', git: 'https://github.com/umeshravani/spree_product_reviews.git', branch: 'main'
 gem 'spree_razorpay_checkout', git: 'https://github.com/umeshravani/spree_razorpay.git', branch: 'main'
