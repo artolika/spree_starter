@@ -598,6 +598,9 @@ GEM
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.6)
+    rack-cors (3.0.0)
+      logger
+      rack (>= 3.0.14)
     rack-protection (4.2.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -1074,6 +1077,7 @@ DEPENDENCIES
   pry
   pry-remote
   puma (>= 5.0)
+  rack-cors
   rails (~> 8.0.0)
   rails-controller-testing
   redis (>= 4.0.1)
@@ -1092,16 +1096,16 @@ DEPENDENCIES
   spree_admin (~> 5.4.2)
   spree_dev_tools
   spree_emails (~> 5.4.2)
-  spree_google_analytics
+  spree_google_analytics (~> 1.1)
   spree_google_products!
   spree_i18n
-  spree_klaviyo
+  spree_klaviyo (~> 1.1)
   spree_multi_store (~> 1.0)
-  spree_page_builder (~> 5.4.2)
+  spree_page_builder
   spree_posts (~> 1.0)
   spree_product_reviews!
   spree_razorpay_checkout!
-  spree_storefront (~> 5.4.2)
+  spree_storefront
   spree_stripe
   stimulus-rails
   turbo-rails

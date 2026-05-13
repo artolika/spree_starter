@@ -96,6 +96,9 @@ gem 'sidekiq'
 # Use Devise for authentication
 gem "devise"
 
+# Use CORS for Next.JS
+gem 'rack-cors'
+
 # Sentry for error/performance monitoring
 gem 'sentry-ruby'
 gem 'sentry-rails'
@@ -108,19 +111,20 @@ gem 'activemerchant'
 gem "spree_multi_store", "~> 1.0"
 gem "spree_posts", "~> 1.0"
 gem 'jsonapi-rspec', group: :test
+#gem 'spree_legacy_api_v2'
 
 # Spree gems
 spree_opts = '~> 5.4.2'
 gem "spree", spree_opts
 gem "spree_emails", spree_opts
 gem "spree_admin", spree_opts
-gem "spree_storefront", spree_opts
-gem "spree_page_builder", spree_opts
+gem "spree_storefront"
+gem "spree_page_builder"
 gem "spree_i18n"
 gem "spree_stripe"
-gem "spree_google_analytics"
-gem "spree_klaviyo"
-#gem "spree_paypal_checkout"
+gem "spree_google_analytics", "~> 1.1"
+gem "spree_klaviyo", "~> 1.1"
+#gem "spree_paypal_checkout", "~> 0.5"
 
 gem 'spree_product_reviews', git: 'https://github.com/umeshravani/spree_product_reviews.git', branch: 'main'
 gem 'spree_razorpay_checkout', git: 'https://github.com/umeshravani/spree_razorpay.git', branch: 'main'
