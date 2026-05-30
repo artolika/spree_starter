@@ -114,7 +114,7 @@ gem 'jsonapi-rspec', group: :test
 #gem 'spree_legacy_api_v2'
 
 # Spree gems
-spree_opts = '~> 5.4.2'
+spree_opts = '~> 5.4.3'
 gem "spree", spree_opts
 gem "spree_emails", spree_opts
 gem "spree_admin", spree_opts
@@ -128,5 +128,7 @@ gem "spree_klaviyo", "~> 1.1"
 
 gem 'spree_product_reviews', git: 'https://github.com/umeshravani/spree_product_reviews.git', branch: 'main'
 gem 'spree_razorpay_checkout', git: 'https://github.com/umeshravani/spree_razorpay.git', branch: 'main'
+#gem 'spree_cod_payment', git: 'https://github.com/olympusone/spree_cod_payment.git', branch: 'main'
 #gem 'spree_delhivery', git: 'https://github.com/umeshravani/spree_delhivery.git', branch: 'main'
+#gem 'spree_three_d_ar', git: 'https://github.com/umeshravani/spree_three_d_ar.git', branch: 'main'
 gem 'spree_google_products', git: 'https://github.com/umeshravani/spree_google_products', branch: 'main'
